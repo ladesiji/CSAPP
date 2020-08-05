@@ -1,0 +1,15 @@
+{
+    //tasks.json
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "g++",
+            "args": [ //传递参数 最终和command生成例如：g++ -g 当前文件.c -std=c++17
+                "-g",
+                "${file}",
+                "-std=c++17",//使用c17的标准
+            ],
+        }
+    ]
+}
