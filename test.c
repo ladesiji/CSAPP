@@ -2,11 +2,9 @@
 
 int main()
 {
-    int in=999;
-    for (int i=0; i<5; i++)
+    int in=-2147483648;
     {
-        printf("测试%d\n", i);
+        printf("测试 %d\n", in-1);
     }
-    int out=77;
     return 0;
 }
