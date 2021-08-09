@@ -1,15 +1,16 @@
-long test(long x, long y, long z){
-    long val = x + y + z;
-    if (x < -3){
-        if (y < z)
-            val = x * y;
-        else
-            val = y * z;
+
+long fact_for_while(long n){
+    long i = 2;
+    long result = 1;
+    if (i > n){
+        goto done; 
     }
-    else{
-        if (x > 2)
-            val = x * z;
-    }
-    return val;
-    
+    loop:
+        result *= i;
+        i++;
+        if (i <= n){
+            goto loop;
+        }
+    done:
+        return result;
 }

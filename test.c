@@ -2,9 +2,9 @@
 
 int main()
 {
-    int in=-2147483648;
+    char *s="hello world";
     {
-        printf("测试 %d\n", in-1);
+        printf("%s\n",s);
     }
     return 0;
 }
